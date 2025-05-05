@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced Animation App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🎨 Cute Dogs</h1>
+
+  <div class="image-container">
+    <img src="flowerDog.jpg" alt="Main" id="toggleImage" onclick="triggerImageAnimation(this)" />
+  </div>
+
+  <br/><br/>
+
+  <button class="animated-btn" onclick="handleClick()">Click Me</button>
+
+  <br/><br/>
+
+  <label for="volumeControl">Volume:</label>
+  <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value)" />
+
+  <br/><br/>
+
+  <label for="themeSelect">Choose Theme:</label>
+  <select id="themeSelect" onchange="setTheme(this.value)">
+    <option value="white">Light</option>
+    <option value="#1e1e1e">Dark</option>
+    <option value="#fce4ec">Pink</option>
+  </select>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
